@@ -27,27 +27,27 @@ for (let i = 0; i < operations.length; i++) {
       screenValue = '*';
       result.value += screenValue;
     } else if (i === 0) {
-      screenValue = '-';
-      result.value += screenValue;
+      result.value = '';
     } else if (i === 2) {
       screenValue = '/';
       result.value += screenValue;
     } else if (i === 6) {
-      screenValue = '+';
+      screenValue = '(';
       result.value += screenValue;
     } else if (i === 2) {
       screenValue = '/';
       result.value += screenValue;
     } else if (i === 7) {
-      result.value = '';
+      screenValue = ')';
+      result.value += screenValue;
     } else if (i === 8) {
       screenValue = '%';
       result.value += screenValue;
     } else if (i === 4) {
-      screenValue = '(';
+      screenValue = '+';
       result.value += screenValue;
     } else if (i === 5) {
-      screenValue = ')';
+      screenValue = '-';
       result.value += screenValue;
     } else if (i === 3) {
       screenValue = '.';
