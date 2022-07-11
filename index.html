@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculater</title>
     <link rel="stylesheet" href="./style.css" />
+    <!-- Link the css file -->
     <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <!-- Link the font awesome file-->
   </head>
   <body>
     <h1 class="title">CALCULATER</h1>
     <div class="underline"></div>
+    <!-- Container in order to use grid -->
     <div class="input-container">
-      <input
-        type="text"
-        id="result"
-        class="input-filed"
-        readonly
-        name="screen"
-      />
+      <input type="text" id="result" class="input-filed" readonly />
     </div>
+    <!-- Container in order to use css flex  -->
+    <!-- Clear and equal has thier own id because I made a specail style for each of them -->
     <div class="conatiner">
       <button class="number">7</button>
       <button class="number">8</button>
@@ -28,24 +27,35 @@
       <button class="number">4</button>
       <button class="number">5</button>
       <button class="number">6</button>
-      <button class="operation" id="multi">*</button>
+      <button class="operation">*</button>
       <button class="number">1</button>
       <button class="number">2</button>
       <button class="number">3</button>
-      <button class="operation" id="divide">
+      <button class="operation">
         <i class="fa-solid fa-divide"></i>
       </button>
       <button class="operation" id="dot">.</button>
       <button class="number">0</button>
-      <button class="operation" id="plus">+</button>
-      <button class="operation" id="minus">-</button>
-      <button class="operation" id="right-parentheses">(</button>
-      <button class="operation" id="left-parentheses">)</button>
-      <button class="operation" id="persentage">%</button>
+      <button class="operation">+</button>
+      <button class="operation">-</button>
+      <button class="operation">(</button>
+      <button class="operation">)</button>
+      <button class="operation">%</button>
       <button class="operation" id="equal">=</button>
     </div>
+    <button class="PDF">convert operations to <span>pdf</span></button>
     <div class="underline custom"></div>
+    <!-- custom class to make it span all across the screen -->
     <h2 class="footer-text">MADE WITH LOVE<i class="fa-solid fa-heart"></i></h2>
+    <!-- Link javascript file -->
     <script src="./script.js"></script>
+    <!-- For jsPDF library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+      integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
   </body>
 </html>

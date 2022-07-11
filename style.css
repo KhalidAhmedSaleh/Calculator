@@ -86,6 +86,7 @@ input {
 .input-container {
   display: grid;
   justify-items: center;
+  align-items: center;
   margin-top: 10rem;
 }
 
@@ -99,7 +100,7 @@ input {
 
 .title {
   color: white;
-  text-align: center;
+  text-align: center; /* Center the text */
   margin-top: 2rem;
 }
 
@@ -107,20 +108,22 @@ input {
   width: 20rem;
   height: 0.5rem;
   background-color: #ffffff;
-  margin: 0 auto;
+  margin: 0 auto; /* Center the underline */
 }
 
 /* numbers */
 
 .number {
-  border-color: transparent;
+  border-radius: var(--raduis);
+  border-color: transparent; /* Get rid of the border color */
+  /* Add space on the right of every element */
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   width: 6rem;
   height: 2rem;
   background-color: white;
   transition: var(--transition);
-  cursor: pointer;
+  cursor: pointer; /* Appear that finger sign when hovering over the numbers */
 }
 
 .number:hover {
@@ -132,6 +135,7 @@ input {
 /* operations */
 
 .operation {
+  border-radius: var(--raduis);
   border-color: transparent;
   margin-right: 0.5rem;
   width: 6rem;
@@ -139,6 +143,7 @@ input {
   background-color: white;
   transition: var(--transition);
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .operation:hover {
@@ -149,36 +154,60 @@ input {
 
 #clear {
   background-color: #e74c3c;
+  color: #e6e6e6;
+  font-size: 1rem;
 }
 
 #dot {
   font-size: 1.5rem;
 }
 
-#minus {
-  font-size: 1.5rem;
-}
-
 #equal {
+  color: #e6e6e6;
+  font-size: 1rem;
   background-color: #2ecc71;
 }
 
 .conatiner {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Start new line once the element cover the width */
   width: 27rem;
   margin: 1rem auto;
 }
 
 .custom {
   margin-top: 3rem;
-  width: 1730px;
+  width: 1745px;
 }
 
 .footer-text {
   color: white;
   text-align: center;
 }
+
 .footer-text i {
   color: #e74c3c;
+}
+
+/* PDF */
+
+.PDF {
+  background-color: #e74;
+  cursor: pointer;
+  transition: var(--transition);
+  color: #e6e6e6;
+  border-color: transparent;
+  width: 13rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  border-radius: var(--raduis);
+  height: 2rem;
+}
+
+.PDF span {
+  text-transform: uppercase;
+}
+
+.PDF:hover {
+  background-color: #be5f36;
 }
